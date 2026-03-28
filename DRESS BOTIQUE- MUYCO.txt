@@ -1,0 +1,228 @@
+Here’s a complete **responsive static dress boutique website** using **HTML with internal CSS only**, styled in a **modern baby blue theme** and including all the sections you requested.
+
+You can copy and paste this into a `.html` file and open it in your browser:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elegant Dress Boutique</title>
+
+<style>
+/* RESET */
+* {
+    margin: 100;
+    padding: 50;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* COLORS */
+:root {
+    --baby-blue: #a7d8f5;
+    --light-blue: #eaf6fd;
+    --dark-blue: #3a7ca5;
+}
+
+/* HEADER */
+header {
+    background: var(--baby-blue);
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    color: white;
+}
+
+/* NAVIGATION */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* HERO */
+.hero {
+    background: var(--light-blue);
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h2 {
+    font-size: 40px;
+    color: var(--dark-blue);
+}
+
+.hero p {
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+.hero button {
+    padding: 10px 20px;
+    background: var(--baby-blue);
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* SECTIONS */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* SERVICES */
+.services .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background: var(--light-blue);
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+}
+
+/* ABOUT */
+.about {
+    background: var(--light-blue);
+}
+
+/* GALLERY */
+.gallery .images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* CONTACT */
+.contact {
+    background: var(--light-blue);
+}
+
+/* FOOTER */
+footer {
+    background: var(--baby-blue);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+}
+</style>
+
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+    <h1>Elegant Boutique</h1>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <h2>Discover Your Perfect Dress</h2>
+    <p>Elegant, modern, and timeless fashion for every occasion.</p>
+    <button>Shop Now</button>
+</section>
+
+<!-- SERVICES -->
+<section class="services">
+    <h2>Our Services</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Custom Dresses</h3>
+            <p>Tailored designs just for you.</p>
+        </div>
+        <div class="card">
+            <h3>Alterations</h3>
+            <p>Perfect fit guaranteed.</p>
+        </div>
+        <div class="card">
+            <h3>Styling</h3>
+            <p>Expert fashion advice.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about">
+    <h2>About Us</h2>
+    <p>We are a boutique dedicated to bringing elegance and confidence through beautifully crafted dresses. Our passion is helping you shine on every occasion.</p>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery">
+    <h2>Gallery</h2>
+    <div class="images">
+        <img src="https://via.placeholder.com/300x400" alt="Dress 1">
+        <img src="https://via.placeholder.com/300x400" alt="Dress 2">
+        <img src="https://via.placeholder.com/300x400" alt="Dress 3">
+        <img src="https://via.placeholder.com/300x400" alt="Dress 4">
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact">
+    <h2>Contact Us</h2>
+    <p>Email: info@elegantboutique.com</p>
+    <p>Phone: +63 912 345 6789</p>
+    <p>Location: Davao City, Philippines</p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>&copy; 2026 Elegant Boutique. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
+```
+
+---
+
